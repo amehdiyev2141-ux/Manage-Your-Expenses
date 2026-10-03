@@ -409,7 +409,7 @@ function FormBody({ expense, onDone, onSaved }: { expense: Expense | null; onDon
   );
 }
 
-function Field({ label: l, error, children }: { label: string; error?: string; children: React.ReactNode }) {
+function Field({ label: l, error, children }: { label: string; error?: string | undefined; children: React.ReactNode }) {
   return (
     <div className="space-y-1.5">
       <Label className="text-sm text-foreground">{l}</Label>
